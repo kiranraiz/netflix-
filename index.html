@@ -1,0 +1,498 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<link rel="icon" type="image/jpg" href="favicon.png">
+    <style>
+
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Outfit:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;1,100;1,300;1,400;1,500&family=Signika+Negative:wght@300..700&display=swap');
+
+
+.poppins-regular {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+
+.poppins-regular {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.poppins-medium {
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.poppins-semibold {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+}
+
+
+
+
+        * {
+            margin: 0;
+            padding: 0;
+            text-transform: capitalize;
+
+        }
+
+        body{
+            background-color: black;
+        }
+        .main {
+            width: 100%;
+            height: 80vh;
+            background-image: url("bg\ img.jpg");
+            background-repeat: no-repeat;
+            background-size: cover;
+            position: relative;
+            background-position: center center;
+        }
+
+        .box {
+            position: absolute;
+            top: 0;
+            width: 100%;
+            height: 80vh;
+            background-color: black;
+            opacity: 0.67;
+        }
+
+        .logo {
+            width: 129px;
+            height: 29px;
+            z-index: 10;
+            position: relative;
+        }
+
+        .navbar button {
+            z-index: 10;
+            position: relative;
+        }
+
+        .navbar {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            max-width: 60vw;
+            margin: auto;
+            height: 72px;
+        }
+
+        .hero {
+            height: calc(100% - 70px);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            flex-direction: column;
+            position: relative;
+            max-width: 50vw;
+            margin: auto;
+            font-family:poppins;
+            gap: 12px;
+            padding:0 30px;
+        }
+
+        .hero h3 {
+            font-size: 47px;
+            color: white;
+            font-weight: 800;
+            text-align: center;
+        }
+
+        .hero span {
+            font-size: 22px;
+            color: white;
+            text-align: center;
+
+        }
+
+        .hero p {
+            text-align: center;
+
+            font-size: 17px;
+            color: white;
+        }
+
+        .btn{
+            padding: 7px 8px;
+            font-weight: bold;
+border: 2px solid rgb(72, 69, 69);
+  border-radius: 4px;
+background-color: rgba(23, 23, 23, 0.2);
+color: rgb(196, 191, 191);
+cursor: pointer;
+        }
+        .btn-red{
+background-color: red;
+color: white;
+padding: 17px 34px;
+font-size: 18px;
+border: none;
+
+        }
+        .btn-red-sm{
+padding: 9px 17px;
+border: none;
+            background-color: red;
+            color: white; 
+        }
+ .main .hero input{
+    padding: 13px 43px;
+
+font-size: 15px;
+background-color: rgba(23, 23, 23, 0.2);
+border-radius: 4px;
+color: white;
+border: 2px solid rgb(72, 69, 69);
+}
+.hero-btn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
+}
+
+.sepration{
+    height: 7px;
+    background-color: rgb(69, 67, 67);
+
+
+}
+/* hero section end  */
+/* faq section start  */
+.faq-section h2{
+ color: white;
+ font-weight: 600;
+ font-size: 22px;
+ padding: 34px;
+ text-align: center;
+}
+.faq-section .faq-box{
+   color: white;
+   background-color:#2D2D2D;
+   font-size: 24px;
+width: 60vw ;
+   padding:27px 34px;
+  margin: 7px 0;
+    transition: all 1s ease-out;
+    cursor: pointer;
+   
+}
+.faq-box:hover{
+
+    background-color: rgb(83, 81, 81);
+}
+.faq-section .faq-container 
+{
+    
+    display: flex;
+   flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+
+}
+/* faq section end */
+/* join :start  */
+
+
+.join-text h1{
+    font-size: 20px;
+    margin-top: 50px;
+    padding:1rem 10rem;
+
+}
+.join-container{
+    padding:2rem 10rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(16rem ,1fr) );
+    gap: 1rem;
+}
+.join-container .tv-box{ 
+ color: white;
+ background-color: #1E162A;
+padding: 30px;
+border-radius: 10px;
+padding: 1.5rem 19px;
+}
+.join-container .tv-box h4{
+    font-size: 27px;
+    line-height: 50px;
+    font-weight: 600;
+}
+.join-container .tv-box p{
+    font-size: 19px;
+    line-height: 37px;
+    margin-top: 20px;
+}
+
+.join-container .tv-box  img{
+    width: 80px;
+    border-radius: 70px;
+margin-left: 170px;
+}
+.join-container .tv-box:nth-child(1) img{
+    margin-top: 130px;
+}
+.join-container .tv-box:nth-child(2) img{
+    margin-top: 90px;
+ 
+}.join-container .tv-box:nth-child(3) img{
+    margin-top: 130px;
+ 
+}.join-container .tv-box:nth-child(4) img{
+    margin-top: 29px;
+ 
+}
+/* join end  */
+
+@media  (min-width:360px) and (max-width:380px) {
+   body{
+    background-color: blueviolet;
+   }
+   .box {
+            position: absolute;
+            top: 0;
+            width: 100%;
+            height: 80vh;
+            background-color: black;
+            opacity: 0.67;
+        }
+
+        .logo {
+            width: 100px;
+            height: 20px;
+            z-index: 10;
+            position: relative;
+        }
+
+        .navbar button {
+            z-index: 10;
+            position: relative;
+        }
+
+        .navbar {
+            max-width: 80vw;
+            height: 62px;
+        }
+
+        .hero {
+            height: calc(100% - 70px);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            flex-direction: column;
+            position: relative;
+            max-width: 70vw;
+            margin: auto;
+            font-family:poppins;
+            gap: 10px;
+            padding:0 30px;
+        }
+
+        .hero h3 {
+            font-size: 27px;
+            color: white;
+            font-weight: 900;
+            text-align: center;
+        }
+
+        .hero span {
+            font-size: 20px;
+            color: white;
+            text-align: center;
+
+        }
+
+        .hero p {
+            text-align: center;
+
+            font-size: 16px;
+            color: white;
+        }
+
+        .btn{
+            padding: 3px 8px;
+            font-weight: bold;
+border: 2px solid rgb(72, 69, 69);
+  border-radius: 4px;
+background-color: rgba(23, 23, 23, 0.2);
+color: white;
+        }
+        .btn-red{
+background-color: red;
+color: white;
+padding: 5px 17px;
+font-size: 15px;
+border: none;
+
+        }
+        .btn-red-sm{
+padding: 5px 17px;
+border: none;
+            background-color: red;
+            color: white; 
+        }
+ .main .hero input{
+padding: 5px 17px;
+font-size: 13px;
+background-color: rgba(23, 23, 23, 0.2);
+border-radius: 4px;
+color: white;
+border: 2px solid rgb(72, 69, 69);
+}
+.hero-btn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.sepration{
+    height: 7px;
+    background-color: rgb(69, 67, 67);
+}
+/* hero section end  */
+
+
+
+/* join strt  */
+.join-container{
+    padding:1rem 2rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(16rem ,1fr) );
+    gap: 1rem;
+}
+.join-container .tv-box{ 
+ color: white;
+ background-color: #1E162A;
+border-radius: 10px;
+padding: 1rem 19px;
+}
+.join-text h1{
+    font-size: 20px;
+    margin-top: 20px;
+    padding:1rem 2rem;
+
+}
+
+
+
+/* /* join end  */
+
+
+
+
+
+
+
+
+
+
+
+
+}
+
+
+
+    </style>
+</head>
+
+<body>
+    <div class="main">
+        <nav class="navbar">
+            <div class="logo">
+                <div data-layout="item" class=" default-ltr-cache-cjcvzz-StyledItem ew2l6qe0"><span
+                        class="default-ltr-cache-0 ev1dnif0" data-uia="nmhp-card-header+logo"><svg viewBox="0 0 111 30"
+                            version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                            aria-hidden="true" role="img" fill="red" class="default-ltr-cache-1d568uk ev1dnif2">
+                            <g>
+                                <path
+                                    d="M105.06233,14.2806261 L110.999156,30 C109.249227,29.7497422 107.500234,29.4366857 105.718437,29.1554972 L102.374168,20.4686475 L98.9371075,28.4375293 C97.2499766,28.1563408 95.5928391,28.061674 93.9057081,27.8432843 L99.9372012,14.0931671 L94.4680851,-5.68434189e-14 L99.5313525,-5.68434189e-14 L102.593495,7.87421502 L105.874965,-5.68434189e-14 L110.999156,-5.68434189e-14 L105.06233,14.2806261 Z M90.4686475,-5.68434189e-14 L85.8749649,-5.68434189e-14 L85.8749649,27.2499766 C87.3746368,27.3437061 88.9371075,27.4055675 90.4686475,27.5930265 L90.4686475,-5.68434189e-14 Z M81.9055207,26.93692 C77.7186241,26.6557316 73.5307901,26.4064111 69.250164,26.3117443 L69.250164,-5.68434189e-14 L73.9366389,-5.68434189e-14 L73.9366389,21.8745899 C76.6248008,21.9373887 79.3120255,22.1557784 81.9055207,22.2804387 L81.9055207,26.93692 Z M64.2496954,10.6561065 L64.2496954,15.3435186 L57.8442216,15.3435186 L57.8442216,25.9996251 L53.2186709,25.9996251 L53.2186709,-5.68434189e-14 L66.3436123,-5.68434189e-14 L66.3436123,4.68741213 L57.8442216,4.68741213 L57.8442216,10.6561065 L64.2496954,10.6561065 Z M45.3435186,4.68741213 L45.3435186,26.2498828 C43.7810479,26.2498828 42.1876465,26.2498828 40.6561065,26.3117443 L40.6561065,4.68741213 L35.8121661,4.68741213 L35.8121661,-5.68434189e-14 L50.2183897,-5.68434189e-14 L50.2183897,4.68741213 L45.3435186,4.68741213 Z M30.749836,15.5928391 C28.687787,15.5928391 26.2498828,15.5928391 24.4999531,15.6875059 L24.4999531,22.6562939 C27.2499766,22.4678976 30,22.2495079 32.7809542,22.1557784 L32.7809542,26.6557316 L19.812541,27.6876933 L19.812541,-5.68434189e-14 L32.7809542,-5.68434189e-14 L32.7809542,4.68741213 L24.4999531,4.68741213 L24.4999531,10.9991564 C26.3126816,10.9991564 29.0936358,10.9054269 30.749836,10.9054269 L30.749836,15.5928391 Z M4.78114163,12.9684132 L4.78114163,29.3429562 C3.09401069,29.5313525 1.59340144,29.7497422 0,30 L0,-5.68434189e-14 L4.4690224,-5.68434189e-14 L10.562377,17.0315868 L10.562377,-5.68434189e-14 L15.2497891,-5.68434189e-14 L15.2497891,28.061674 C13.5935889,28.3437998 11.906458,28.4375293 10.1246602,28.6868498 L4.78114163,12.9684132 Z">
+                                </path>
+                            </g>
+                        </svg></span></div>
+
+            </div>
+            <div class="flex">
+                <button class="btn">english</button>
+                <button class="btn btn-red-sm">sign in</button>
+            </div>
+        </nav>
+        <div class="box">
+        </div>
+        <div class="hero">
+            <h3>Unlimited movies, TV shows, and more</h3>
+            <span>Starts at Rs 250. Cancel anytime.</span>
+            <p>Ready to watch? Enter your email to create or restart your membership.</p>
+<div class="hero-btn">
+
+    <input type="email" placeholder="email adress">
+    <button class="btn btn-red"  >get started &gt;</button>
+</div>
+
+        </div>
+
+<div class="sepration">
+
+</div>
+    </div>
+<!-- hero section end   -->
+ <!-- jion section strt  -->
+
+ 
+  <sectio class="join">
+    <div class="join-text">
+<h1 style="color: white;">More Reasons to Join</h1></div>
+<div class="join-container">
+<div class="tv-box">
+    <h4>Enjoy on your TV</h4>
+    <p>Watch on Smart TVs, Playstation, Xbox, Chromecast, Apple TV, Blu-ray players, and more.</p>
+    <img src="tv.jpeg" alt="">
+</div>
+
+<div class="tv-box">
+    <h4>Download your shows to watch offline
+    </h4>
+    <p>Save your favorites easily and always have something to watch.</p>
+    <img src="dwnload shows.jpeg" alt="">
+</div>
+
+<div class="tv-box">
+    <h4>Watch everywhere</h4>
+    <p>Stream unlimited movies and TV shows on your phone, tablet, laptop, and TV.</p>
+    <img src="watch everyone.jpeg" alt="">
+</div>
+
+<div class="tv-box">
+    <h4>Create profiles for kids</h4>
+    <p>Send kids on adventures with their favorite characters in a space made just for them — free with your membership.</p>
+    <img src="kids profile.jpeg" alt="">
+</div>
+</div>
+
+
+ </sectio> 
+
+ <!-- jion section end  -->
+
+
+
+
+</body>
+
+</html>
